@@ -1,0 +1,234 @@
+/* recordar: xq entre distintos navegadores hay distintos margenes asi q es mejor resetear siempre*/
+body * {
+    margin: 0px;  /* que aveces quedan espacios */
+    padding: 0px;
+    border: 0px;
+    font-family: 'Open Sans', sans-serif; /*para ahorrar codigo se puso aca*/
+}
+
+/*NAVBAR*/
+
+nav {
+    background-color: #000F08;
+    padding: 20px 0px 20px 100px;
+}
+
+nav li {
+    display: inline-block; /* inline-block en vez de inline xq el formato del svs depende de la contencion*/
+    margin-right: 40px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none; /*desaparecer los subrayados*/
+    color: #ffffff;
+}
+
+.icono {
+    width: 2rem; /*32px*/
+}
+
+.icono svg {
+    fill: white;
+}
+
+/*HEADER */
+header {
+    /* propiedades del fondo*/
+    background-image: url(../img/bg-hero.png); /* porque es imagen de fondo*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*define el tamaño*/
+
+    /* propiedades del texto*/
+    color: #ffffff;
+    text-shadow: 0px 3px 6px black; /*para la sombra*/
+    text-align: right;
+    padding: 90px 200px 100px 450px;
+}
+
+header h1 {
+    font-size: 65px;
+}
+
+header h3 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+/* DONDE NOS JUNTAMOS */
+
+.ubicacion {
+    text-align: center;
+    padding: 150px;
+}
+
+.ubicacion img {
+    width: 30%; /*520px*/
+    margin-bottom: 30px;
+}
+
+.ubicacion h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ubicacion p {
+    font-size: 24px;
+    padding: 0px 450px 0px;
+}
+
+
+/*PROXIMA CHARLA*/
+
+#proxima-charla {
+    background-color: #A4452c;
+    color: white;
+    /* border-style: dashed;
+    border-color: blue;
+    border-width: 3px; para el ancho */
+    /* border: 3px dashed blue;  anotamos las 3 aca */
+    padding: 100px;
+}
+
+#proxima-charla .wrapper {
+    /*para apuntar a clases dentro de un id*/
+    width: 800px;
+    margin: auto;
+    /* coloca un margin igual en todos lados*/
+}
+
+.wrapper img {
+    width: 33%;
+}
+
+.wrapper .texto {
+    width: 63%;
+    margin-left: 3%;
+}
+
+.texto h3 {
+    font-size: 45px;
+}
+
+.texto h4 {
+    font-size: 40px;
+}
+
+.texto h5 {
+    font-size: 33px;
+    font-weight: 400;
+}
+
+.texto span {
+    font-size: 16px;
+}
+
+.texto p {
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.wrapper img,
+.texto {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*EVENTOS ANTERIORES */
+
+.eventos-anteriores {
+    text-align: center;
+    padding: 80px 0px;
+    /*para q sea padding arriba y abajo nomas*/
+}
+
+.eventos-anteriores .trio {
+    display: flex;
+    /*¿porqué no funciona el inline? respuesta: xq no es elemento a span strong ni em, es decir, elementos de texto/linea*/
+    flex-direction: row;
+    /* en 1 fila horizontal*/
+    justify-content: center;
+    /*para alinear elementos horizontalmente */
+    gap: 150px;
+    /*separar items*/
+}
+
+.eventos-anteriores h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.eventos-anteriores img {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.eventos-anteriores h3 {
+    font-size: 35px;
+    margin-bottom: 100px;
+}
+
+.eventos-anteriores a {
+    text-decoration: none;
+    /*desaparecer los subrayados*/
+    color: #000F08;
+}
+
+/* FOOTER*/
+footer {
+    text-align: center;
+    background-color: #000F08;
+    color: #ffffff;
+    padding: 100px 0 25px 0;
+    margin-top: 70px;
+}
+
+footer i {
+    font-size: 75px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 25px;
+
+}
+
+/*SIMPOSIO VENGAN*/
+
+.simposio {
+    width: 100%;
+}
+
+.texto-parrafo {
+    font-size: 22px;
+    padding: 100px 480px 100px 480px;
+}
+
+.titulo-h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    padding: 100px 0px 0px 480px;
+}
+
+.titulo-h2 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 480px;
+}
+
+.imagen-simposio {
+    height: 566px;
+    padding-bottom: 50px;
+}
